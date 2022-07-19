@@ -1,0 +1,32 @@
+
+<mat-card class="question">
+  <mat-card-title>
+    {{ question.question }}
+  </mat-card-title>
+</mat-card>
+
+
+<form>
+  <button type="submit" disabled style="display: none" aria-hidden="true"></button>
+  <div class="question">
+
+    <mat-label class="answer-label">Answer: </mat-label>
+    <mat-form-field>
+
+      <input class="answer-input" matInput [formControl]="answer">
+    </mat-form-field>
+    <button mat-raised-button class="submit-button" type="button" (click)="submit()">Submit</button>
+  </div>
+</form>
+
+<div>
+  <ng-container *ngIf="showCorrect">
+    Correct!
+  </ng-container>
+  <ng-container *ngIf="showIncorrect">
+    Wrong!
+  </ng-container>
+</div>
+
+
+{{ question.answer }}

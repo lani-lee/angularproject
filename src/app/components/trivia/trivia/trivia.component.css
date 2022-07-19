@@ -1,0 +1,18 @@
+.question {
+  width: 50%;
+  margin: 20px;
+  background-color: rebeccapurple;
+  line-height: 250%;
+}
+
+.answer-label {
+  padding: 20px;
+  font-size: 150%;
+}
+
+.answer-input {
+}
+
+.submit-button {
+  margin: 20px;
+}
